@@ -33,7 +33,7 @@ class Blacklist
     /**
      * @param \Tymon\JWTAuth\Contracts\Providers\Storage  $storage
      */
-    public function __construct(Storage $storage)
+    public function __construct(StorageInterface $storage)
     {
         $this->storage = $storage;
     }
