@@ -37,6 +37,18 @@ class IlluminateCacheAdapter implements StorageInterface
     {
         $this->cache()->put($key, $value, $minutes);
     }
+    
+    /**
+     * Get an item from storage
+     *
+     * @param  string  $key
+     *
+     * @return mixed
+     */
+    public function get($key)
+    {
+        return $this->cache()->get($key);
+    }
 
     /**
      * Check whether a key exists in storage
